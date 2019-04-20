@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="code/css/wu_style.css">
+</head>
+
+<body>
+
+  <h3 class="wu">Write-up</h3>
+            <br>
+
+            <h4 class="wu">Design rationale</h4><br>
+                <p>Being avid travelers ourselves, we wanted to work with some Airbnb data and visualize Airbnb listing data in a way to help tourists plan for their trip ahead. We decided to choose the city of Boston since we already live there and have an understanding of the city landscape and how neighborhoods are different from each other. </p>
+
+                <p>Boston is a very walkable city with many popular touristy spots clustered around certain areas in the city. With this visualization tool, we hope to help travelers plan their trip and book their Airbnb stay close to T-stops to minimize travel costs while exploring the city and sightseeing.</p>
+
+                <p>Our A3 focuses on a high-level view of the city that enables users to interact with the map and select Airbnb listings based on their preferences such as price range and room types. We went through several iterations of design sprints before we decided on the current version. See “Development Process” section for more details. </p>
+
+                <p>This visualization shows a map of the Boston T-stop and all Airbnb listings within a walkable 1,000-meter radius around any given T-stop. You can mouse over any given T-stop and see the number of Airbnb listings and their average price based on your selection criterion. Additionally, the size of the circles reflect the magnitude of the number of Airbnb listings that fulfill the selected criterion. Through this interactive visualization, you can actually identify patterns and draw some inference from the data, such as the correlation between location in the city and Airbnb pricing. Another example would be the correlation between concentration of Airbnb listings and tourist attractions. </p>
+
+ 
+            <h4 class="wu">Development Process</h4>
+
+            <p>Preliminary sketches on a whiteboard. </p>
+           <!--  <div class="sk" style="text-align:center;">
+            <figure><img src="images/sk1.jpeg" alt="Sketch1"/><figcaption>Sketch 1</figcaption></figure>
+            </div>
+
+            <div class="sk" style="text-align:center;">
+            <figure><img src="images/sk2.jpeg" alt="Sketch1"/><figcaption>Sketch 1</figcaption></figure>
+            </div>
+
+            <div class="sk" style="text-align:center;">
+            <figure><img src="images/sk3.jpeg" alt="Sketch1"/><figcaption>Sketch 1</figcaption></figure>
+            </div>
+
+            <div class="sk" style="text-align:center;">
+            <figure><img src="images/sk4.jpeg" alt="Sketch1"/><figcaption>Sketch 1</figcaption></figure>
+            </div> -->
+
+            <figure><img src="images/sk1.jpeg" class="sk" alt="Sketch1"/><figcaption>Sketch 1</figcaption></figure>
+            <figure><img src="images/sk2.jpeg" class="sk" alt="Sketch2"/><figcaption>Sketch 2</figcaption></figure>
+            <figure><img src="images/sk3.jpeg" class="sk" alt="Sketch3"/><figcaption>Sketch 3</figcaption></figure>
+            <figure><img src="images/sk4.jpeg" class="sk" alt="Sketch4"/><figcaption>Sketch 4</figcaption></figure>
+
+            <h5>The main steps of the development process were:</h5><br>
+
+            <ol>
+                <li>Collect the data</li>
+                <li>Process the data</li>
+                <li>Build an SVG map showing T-stops</li>
+                <li>Link stations’ coordinates to the map</li>
+                <li>Filter and count listings based on price and room type selection, grouping by station, making the aggregated data update when filtering conditions change</li>
+                <li>Link the previous aggregated data to map station elements</li>
+                <li>Create circles with radius proportionate to the count of listings per station on the map</li>
+                <li>Create a tooltip box showing Station Name, Number of Listings, Mean Price for a station when the mouse hovers over a circle</li>
+                <li>Integrate and check for consistency between data filtering and visualization rendering</li>
+                <li>Adapt style for the different visualization elements</li>
+            </ol>
+
+            <h5 class="wu">Sources:</h5>
+            <ul>
+                <li>Data</li>
+                <ul>
+                    <li><a href="http://insideairbnb.com/get-the-data.html">Airbnb listings</a></li>
+                    <li><a href="https://github.com/sbemagx/CS171-Metro-Boston-Food-Exploration/blob/master/data/mbta_metadata.json">MBTA stops</a></li>
+                </ul>
+                <li><a href="http://sbemagx.github.io/CS171-Metro-Boston-Food-Exploration/code/">Design inspiration</a> </li>
+                <li>Libraries</li>
+                <ul>
+                    <li>D3.js</li>
+                    <li>jQuery UI</li>
+                    <li>D3-tip.js</li>
+                </ul>
+            </ul>
+
+  
+</body>
+
+</html>
