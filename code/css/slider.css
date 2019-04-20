@@ -1,0 +1,28 @@
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-bottom: 2em;
+
+}
+.ui-slider-horizontal {
+    height: 0.5em;
+    width: 12em;
+}
+.ui-slider-handle {
+	height: 0.2em;
+	width: 0.05em;
+}
+
+#your-price-range{
+	/*font-weight: bold;*/
+	/*color:  #f45941;*/
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Other CSS -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="code/css/index_style.css">
+        <link rel="stylesheet" href="code/css/slider.css">
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="code/js/mbta-svg.js"></script>
+        <script src="code/js/d3.min.js"></script>
+        <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+        <script src="code/js/d3-tip.js"></script>
+        <script src="code/js/FilterVis.js"></script>
+        <script src="code/js/GroupVis.js"></script>
+
+        <title>Journey Ahead</title>
+    </head>
+
+
+    <body>
+
+        <header>6.894 A3 Interactive Visualization Prototype</header>
+
+        <div class="title">
+            <h3>Airbnbs Within Walking Distance of an MBTA Stop</h3>
+        </div>
+
+        <p id = "explain">This visualization offers a comparison by location of Airbnb listings based on data centered around each MBTA stop. The data can be filtered based on Airbnb room types and price range to provide an understanding of disparities or similarities of location within each type of listing. Using Airbnb data of 6247 Airbnbs, we are able to depict an aggregate overview of Boston neighborhoods based on a walkable distance (1 kilometer) from each MBTA stop.</p>
+
+        <p>Please, see our write-up <a href="https://github.mit.edu/pages/6894-sp19/Journey-Ahead/writeup.html">here</a>.</p>
+
+        
+        <div class="vis1">
+            <div id="map">
+                <svg id="mbta_svg"
+                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2050 1850"
+                   enable-background="new 0 0 2050 1850">
+                   <script>document.write(mbta_svg)</script>
+                   <g id="circles"></g>         
+                </svg>
+            </div>
+               
+            
+            <div class="side-filter">
+                
+                <p>
+                    <label for="amount" class="filter_title">Your Price range:</label>
+                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    <input id="price_min" name="price_min" type="hidden" value="0">
+                    <input id="price_max" name="price_max" type="hidden" value="3000">
+                </p>
+
+                <div id="slider-range" onclick="update()"></div>
+                    <div id="filter_form">                
+                        <p>Your type of room:</p>
+                        <label>Private room</label>
+                        <input type="checkbox" name="private_room" id="private_room" onclick="update()"><br>
+                        <label>Entire home/appartment</label>
+                        <input type="checkbox" name="apt" id="apt" onclick="update()"><br>
+                        <label>Shared room</label>
+                        <input type="checkbox" name="sharedroom" id="sharedroom" onclick="update()"><br> 
+                        
+                        <!-- <button id="submit_button" onclick="update()">Jet Set Go!</button> -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    
+       
+        
+        <script src="code/js/FilterVis.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            var update = function(){
+                fv.update_range();
+                // gv.update();
+            }
+            var dataLoaded = function(error,_mapData,_filterData){
+                mapData = _mapData;
+                filterData = _filterData.filter(function (d) { 
+                    return (d.closest_station_1km != ""); });
+                fv = new FilterVis('#FilterVis',mapData, filterData);
+                // gv = new GroupVis('#GroupVis',mapData,filterData);
+            }
+            var path = "https://github.mit.edu/pages/6894-sp19/Journey-Ahead/data/";
+            var startHere = function(){
+                var q = d3.queue();
+                q.defer(d3.csv, path + "count_listings_stations.csv")
+                .defer(d3.csv, path + "listings_summary_w_stations.csv")
+                .await(dataLoaded); // Call dataLoaded function
+           }
+           startHere()
+        </script>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="code/js/FilterVis.js" type="text/javascript"></script>
+        
+        <!-- js files for vis code -->
+
+        <!-- <script src="code/js/Vis.js" type="text/javascript"></script> -->
+         <div class="bottomImages">
+          <div class="column" style="text-align:center;">
+            <figure><img src="images/Millie.jpg" class ="au" alt="Millie"/><figcaption>Millie</figcaption></figure>
+          </div>
+          <div class="column" style="text-align:center;">
+            <figure><img src="images/Vicky.jpg" class ="au" alt="Vicky"/><figcaption>Vicky</figcaption></figure>
+          </div>
+          <div class="column" style="text-align:center;">
+            <figure><img src="images/Nhi.jpg" class ="au" alt="Nhi"/><figcaption>Nhi</figcaption></figure>
+          </div>
+        </div>
+         
+         
+
+        <footer>
+            <p>&copy; Copyright 2019 &bull; Millie Huang &bull; Vicky Liu &bull; Kim-Anh-Nhi Nguyen</p>
+        </footer>
+
+
+    
+    </body>
+
+</html>

@@ -1,0 +1,122 @@
+﻿stop_id,stop_count,stop_reviews,station,line__001,line__002,x,y,ll__001,ll__002
+101,1,1,Alewife Station,red,,640,196,42.395781,-71.142059
+102,1,1,Davis Station,red,,715,269,42.397096,-71.121853
+103,1,1,Porter Square Station,red,,785,344,42.388453,-71.119147
+104,1,1,Harvard Square Station,red,,862,420,42.373562,-71.118911
+105,1,1,Central Square Station,red,,938,495,42.365556,-71.103847
+106,1,1,Kendall Station,red,,1012,570.5,42.362575,-71.086209
+107,1,1,Charles/MGH Station,red,,1070,630,42.361212,-71.070674
+108,1,1,Park Street Station,red,green,1165,720,42.356487,-71.062563
+109,1,1,Downtown Crossing Station,red,orange,1250,810,42.355631,-71.06046
+110,1,1,South Station,red,,1318,878,42.352396,-71.05531
+111,1,1,Broadway Station,red,,1398,1055,42.342785,-71.056898
+112,1,1,Andrew Station,red,,1398,1130,42.330159,-71.057456
+113,1,1,JFK/UMass Station,red,,1398,1225,42.320895,-71.052177
+114,1,1,North Quincy Station,red,,1540,1500,42.275376,-71.029561
+115,1,1,Wollaston Station,red,,1600,1556,42.266675,-71.02042
+116,1,1,Quincy Center Station,red,,1660,1615,42.251905,-71.005185
+117,1,1,Quincy Adams Station,red,,1698,1678,42.233447,-71.007159
+118,1,1,Braintree Station,red,,1699,1766,42.207895,-71.002095
+119,1,1,Savin Hill Station,red,,1317,1455,42.311343,-71.053293
+120,1,1,Fields Corner,red,,1315,1500,42.300139,-71.061705
+121,1,1,Shawmut Station,red,,1315,1537,42.293251,-71.065739
+122,1,1,Ashmont Station,red,,1315,1573,42.284647,-71.064494
+123,1,1,Cedar Grove Station,red,,1315,1644,42.279758,-71.060546
+124,1,1,Butler Station,red,,1298,1685,42.272423,-71.062692
+125,1,1,Milton Station,red,,1250,1685,42.270359,-71.06767
+126,1,1,Central Avenue Station,red,,1203,1685,42.270073,-71.073378
+127,1,1,Valley Road Station,red,,1157,1685,42.268326,-71.081574
+128,1,1,Capen Street Station,red,,1115,1685,42.267691,-71.087668
+129,1,1,Mattapan Station,red,,1062,1685,42.267818,-71.092132
+130,1,1,Oak Grove Station,orange,,1295,53,42.43672,-71.071065
+131,1,1,Malden Center Station,orange,,1295,108,42.426417,-71.073811
+132,1,1,Wellington Station,orange,,1295,172,42.401894,-71.077159
+133,1,1,Assembly Station,orange,,1295,223,42.392735,-71.077245
+134,1,1,Sullivan Square Station,orange,,1295,285,42.383955,-71.077159
+135,1,1,Community College Station,orange,,1295,342,42.373588,-71.069777
+136,1,1,North Station,orange,green,1295,483,42.365598,-71.061666
+137,1,1,Haymarket Station,orange,green,1295,588,42.362998,-71.058362
+138,1,1,State Station,orange,blue,1295,710,42.358939,-71.057804
+140,1,1,Chinatown Station,orange,,1135,926,42.352501,-71.06261
+141,1,1,Tufts Medical Center Station,orange,,1065,995,42.349615,-71.063941
+142,1,1,Back Bay Station,orange,,1010,1053,42.347332,-71.076043
+143,1,1,Massachusetts Avenue Station,orange,,955,1105,42.347902,-71.087973
+144,1,1,Ruggles Station,orange,,905,1158,42.347902,-71.087973
+145,1,1,Roxbury Crossing Station,orange,,850,1210,42.331428,-71.095613
+146,1,1,Jackson Square Station,orange,,783,1279,42.323115,-71.099733
+147,1,1,Stony Brook Station,orange,,715,1346.5,42.317213,-71.104754
+148,1,1,Green Street Station,orange,,647,1415,42.310359,-71.107801
+149,1,1,Forest Hills Station,orange,,579,1483,42.300647,-71.115869
+150,1,1,Wonderland Station,blue,,1878,138,42.413499,-70.991734
+151,1,1,Revere Beach Station,blue,,1810,203,42.407986,-70.992592
+152,1,1,Beachmont Station,blue,,1757,260,42.397718,-70.992378
+153,1,1,Suffolk Downs Station,blue,,1701,314,42.390492,-70.997227
+154,1,1,Orient Heights Station,blue,,1646,368,42.386689,-71.004909
+155,1,1,Wood Island Station,blue,,1588,426,42.379651,-71.022976
+156,1,1,Airport Station,blue,,1547,469,42.37404,-71.030401
+157,1,1,Maverick Station,blue,,1487,530,42.369189,-71.039627
+158,1,1,Aquarium,blue,,1376,638,42.359803,-71.051815
+161,1,1,Bowdoin Station,blue,,1168,595,42.36142,-71.062115
+162,1,1,Lechmere Station,green,,1222,408,42.370838,-71.07662
+163,1,1,Science Park Station,green,,1260,445,42.366684,-71.06778
+166,1,1,Government Center Station,blue,green,1225,650,42.359713,-71.059212
+168,1,1,Boylston Street Station,green,,1083,801,42.352998,-71.064571
+169,1,1,Arlington Station,green,,975,812,42.351983,-71.070923
+170,1,1,Copley Station,green,,887,812,42.349937,-71.077489
+171,1,1,Hynes Convention Center,green,,797,812,42.347939,-71.087939
+172,1,1,Kenmore Station,green,,709.5,812,42.348917,-71.095169
+173,1,1,Blandford Street Station,green,,653,785,42.349313,-71.100297
+174,1,1,Boston University East Station,green,,627,758,42.349773,-71.103988
+175,1,1,Boston University Central Station,green,,592,726,42.35009,-71.106799
+176,1,1,Boston University West Station,green,,565,696,42.350899,-71.113837
+177,1,1,St. Paul Street 02,green,,530,664,42.351248,-71.11609
+178,1,1,Pleasant Street Station,green,,504,637,42.351533,-71.11903
+179,1,1,Babcock Street Station,green,,471,602,42.35185,-71.121712
+180,1,1,Packards Corner Station,green,,440,572,42.351977,-71.125038
+181,1,1,Harvard Avenue Station,green,,395,555,42.35028,-71.131454
+182,1,1,Griggs Street/Long Avenue Station,green,,346,572,42.348504,-71.134951
+183,1,1,Allston Street Station,green,,318,602,42.348695,-71.138041
+184,1,1,Warren Street Station,green,,288,633,42.348409,-71.140509
+185,1,1,Washington Street Station,green,,256,666,42.343937,-71.141903
+186,1,1,Sutherland Road Station,green,,228,694,42.341621,-71.146753
+187,1,1,Chiswick Road Station,green,,195.5,725,42.340797,-71.151474
+188,1,1,Chestnut Hill Avenue Station,green,,165,754,42.338243,-71.153877
+189,1,1,South Street Station,green,,134,786,42.339575,-71.158426
+190,1,1,Boston College Station,green,,82,813,42.34013,-71.166859
+191,1,1,St. Mary's Street Station,green,,592,791,42.345967,-71.107914
+192,1,1,Hawes Street Station,green,,563,765,42.344873,-71.112206
+193,1,1,Kent Street Station,green,,531,732,42.344016,-71.115189
+194,1,1,St. Paul Street,green,,429,725,42.343358,-71.117946
+195,1,1,Coolidge Corner Station,green,,398,759,42.342232,-71.121143
+196,1,1,Summit Avenue Station,green,,370,784,42.341106,-71.126808
+197,1,1,Brandon Hall Station,green,,337,815,42.340027,-71.129683
+198,1,1,Fairbanks Station,green,,305.5,850,42.339742,-71.132001
+199,1,1,Washington Square Station,green,,272,880,42.339488,-71.135391
+200,1,1,Tappan Street Station,green,,240,913,42.338505,-71.139747
+201,1,1,Dean Road Station,green,,210,945,42.337854,-71.142236
+202,1,1,Englewood Avenue Station,green,,176,980,42.337014,-71.145669
+203,1,1,Cleveland Circle Station,green,,125,1005,42.336189,-71.149381
+204,1,1,Fenway Station,green,,625,856,42.345463,-71.104259
+205,1,1,Longwood Station,green,,592,890,42.341181,-71.110417
+206,1,1,Brookline Village Station,green,,558,920,42.33279,-71.116661
+207,1,1,Brookline Hills Station,green,,528,953,42.331331,-71.127369
+208,1,1,Beaconsfield Station,green,,494,984,42.335836,-71.140822
+209,1,1,Reservoir Station,green,,463,1016,42.334979,-71.149019
+210,1,1,Chestnut Hill Station,green,,430,1048,42.326651,-71.165349
+211,1,1,Newton Centre Station,green,,398,1082,42.329443,-71.192471
+212,1,1,Newton Highlands Station,green,,366,1114.5,42.321733,-71.206097
+213,1,1,Eliot Station,green,,333,1147,42.318989,-71.216718
+214,1,1,Waban Station,green,,300,1178,42.325953,-71.230752
+215,1,1,Woodlan Station,green,,270,1211,42.333377,-71.244334
+216,1,1,Riverside Station,green,,217,1238,42.337057,-71.25178
+217,1,1,Prudential Station,green,,830,870,42.345685,-71.081749
+218,1,1,Symphony Station,green,,828,972,42.342688,-71.085054
+219,1,1,Northeastern University Station,green,,805,1005,42.340452,-71.088766
+220,1,1,Museum of Fine Arts Station,green,,777,1030,42.337771,-71.095568
+221,1,1,Longwood Medical Area Station,green,,750,1059,42.336058,-71.101855
+222,1,1,Brigham Cricle Station,green,,723,1085,42.334282,-71.10458
+223,1,1,Fenwood Road Station,green,,694,1115,42.333726,-71.105739
+224,1,1,Mission Park Station,green,,668,1140,42.333139,-71.109838
+225,1,1,Riverway Station,green,,642,1166,42.331728,-71.111983
+226,1,1,Back of the Hill Station,green,,613,1195,42.330141,-71.111383
+227,1,1,Heath Street Station,green,,586,1222,42.328666,-71.110524

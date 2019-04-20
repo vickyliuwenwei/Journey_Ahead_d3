@@ -1,0 +1,141 @@
+footer{
+	font-size: x-small;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 10%;
+}
+
+body{
+  padding: 1em;
+}
+
+.au{
+  height: 100pt;
+  width: 100pt;
+  border-radius: 50%;
+}
+
+.sk {
+  width: 20%;
+
+}
+
+
+
+/*put map and filter box side by side*/
+.vis1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.vis1 svg{
+  width:270%;
+  padding-left:0%;
+  padding-right: 0%;
+  padding-top: 10%;
+  /*background-image: url(../../images/Map2.png);*/
+  /*background-image: url(https://freetoursbyfoot.com/wp-content/uploads/2016/01/Boston-Subway-Map-1011x1024.jpg);*/
+  /*background-repeat: no-repeat;*/
+  /*background-size:auto 50%;*/
+  /*background-position: 25px 25px ;*/
+}
+
+/*button:focus,button:active,button:hover,
+input:focus,input:hover,input:active,
+input[type="submit"]:focus,input[type="submit"]:hover,input[type="submit"]:active{
+    outline:black;
+}*/
+.side-filter{
+  width:40%;
+  height:50%;
+  font-size:80%;
+  padding-top:10%;
+  padding-left:25%;
+
+}
+
+.filter_title{
+  font-weight: bold;
+}
+
+
+#mbta {
+	opacity: .8;
+}
+#cicles {
+	/*fill: rgb(31,119,180);*/
+	stroke-width: 1.5;
+	stroke-opacity: 1;
+	fill-opacity: .5;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: #efefef;
+  color: 333;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.d3-tip:after {
+  box-sizing: border-box;
+  display:  inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+.tip-details {
+  font-size: .8em;
+  margin-top: 4px;
+  line-height: 1.1em;
+  font-weight:normal;
+}
+
+.showbold {
+  font-weight: bold;
+}
+
+.listing-circle{
+	fill: rgb(31,119,180);
+	fill-opacity: .5;
+	stroke: rgb(31, 119, 180);
+  	stroke-width: 1px;
+}
+.listing-circle:hover {
+  fill: orangered;
+  fill-opacity: .5;
+}
+.container {
+	padding-top: 10px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 12px;
+  margin-bottom: 25px;
+  display: inline;
+  text-align: left;
+}
+.row {
+  margin-right: 0px; 
+  margin-left: 0px; 
+}
+
+.wu{
+  display: block;
+  text-align: left;
+}
+ol{
+  display: inline-block;
+  text-align: left;
+}
